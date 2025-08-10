@@ -5,7 +5,7 @@
 
 int calcs() {
     char operation;
-    std::cout << "select operation" << std::endl << "([a]ddition, [s]ubtraction, [d]ivision, [m]ultiplication, [p]ower, [S] square root, [e]xit)" << std::endl;
+    std::cout << "select operation" << std::endl << "([a]ddition, [s]ubtraction, [d]ivision, [m]ultiplication, [p]ower, [S]quare root, [e]xit)" << std::endl;
     std::cin >> operation;
     
     double num1{ 0 }, num2{ 0 };
