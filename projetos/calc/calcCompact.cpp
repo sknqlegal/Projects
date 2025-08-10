@@ -8,7 +8,7 @@ int calcs() {
     std::cout << "select operation" << std::endl << "([a]ddition, [s]ubtraction, [d]ivision, [m]ultiplication, [p]ower, [S] square root, [e]xit)" << std::endl;
     std::cin >> operation;
     
-    int num1{ 0 }, num2{ 0 };
+    double num1{ 0 }, num2{ 0 };
     double result;
     switch(operation){
         case 'a':
