@@ -1,8 +1,8 @@
 <h1>PROJECTS</h1>
 <p>My projects for testing and playing around.</p>
 <p>
-  Project list:
-  Calculator;
+  Project list: <br>
+  Calculator;  <br>
   Quadratic equation calculator.
 </p>
 <code>
@@ -22,5 +22,6 @@
 ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 </code>
+
 
 
