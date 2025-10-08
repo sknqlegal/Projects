@@ -6,9 +6,9 @@ using namespace std;
 
 class Bhaskhara{
     public:
-        int Exit(){
+        int start(){
             std::string choice;
-            std::cout << "Start application? [y/n]" << std::endl;
+            std::cout << "Start application? [y/n]:" << std::endl;
             std::cin >> choice;
 
              if (choice == "y"){
@@ -24,17 +24,14 @@ class Bhaskhara{
         
             int delta = b*b - 4*a*c;
             if (delta < 0){
-                delta *= -1;
+                delta *= -1; //multiplying it by -1 if negative prevents nan root value (line below)
             }
-            double deltaRoot = trunc(sqrt(delta));
+            double deltaRoot = trunc(sqrt(delta)); //truncating cuz apparently some values for delta makes it so an irrational deltaRoot^2 == delta
             
             if (b*b - 4*a*c < 0){
-                std::cout << "Your function has no real values. Show complex solutions?" << std::endl << "[y/n]: ";
+                std::cout << "Your function has no real values. Show complex solutions? [y/n]: ";
                 std::string choice;
                 std::cin >> choice;
-
-                int result1 = -b / (2 * a);
-                int result2 = -b / (2 * a);
 
                 if (choice == "y"){
                     if (pow(deltaRoot, 2) == delta){ //if its a perfect root
@@ -44,8 +41,16 @@ class Bhaskhara{
                     }
                     else if (pow(deltaRoot, 2) != delta){
 
-                        std::cout << "(" << -b << " + " << std::setprecision(2) << deltaRoot << "i" << ")" << " / " << (2 * a) << std::endl
-                                  << "(" << -b << " - " << std::setprecision(2) << deltaRoot << "i" << ")" << " / " << (2 * a) << std::endl;
+                        std::cout << "(" << -b << " + " << "sqrt(" << delta << ")i )" << " / " << (2 * a) << std::endl
+                                  << "(" << -b << " - " << "sqrt(" << delta << ")i )" << " / " << (2 * a) << std::endl;
+
+                            std::string choice;
+                            std::cout << "Approximate results? [y/n]:" << std::endl;
+                            std::cin >> choice;
+                            if (choice == "y"){
+                              std::cout << std::setprecision(2) << (-b + deltaRoot) / (2 * a) << std::endl
+                                        << std::setprecision(2) << (-b - deltaRoot) / (2 * a) << std::endl;
+                            }
                     }
                 }
             }
@@ -55,7 +60,7 @@ class Bhaskhara{
             }
 
             else if (b*b - 4*a*c > 0){
-                if (pow(deltaRoot, 2) == delta){ //if its a perfect root
+                if (pow(deltaRoot, 2) == delta){
                         
                         std::cout << (-b + deltaRoot) / (2 * a) << std::endl << (-b - deltaRoot) / (2 * a) << std::endl;
                     }
@@ -78,8 +83,7 @@ class Bhaskhara{
     };
 
     int main(){
-        Bhaskhara().Exit();
-        while(Bhaskhara().calc()){
-        }
+        Bhaskhara().start();
+        while(Bhaskhara().calc()){}
         return 0;
     }
