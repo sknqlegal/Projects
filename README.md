@@ -1,6 +1,10 @@
-<h1>CALCULATOR</h1>
-<p>This is a calculator project i made in like 2 hours and a little more time for fixing past mistakes (like my birth).</p>
-<p>not anymore. tried optimizing it and stuff</p>
+<h1>PROJECTS</h1>
+<p>My projects for testing and playing around.</p>
+<p>
+  Project list: <br>
+  Calculator;  <br>
+  Quadratic equation calculator.
+</p>
 <code>
   ⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
@@ -18,4 +22,6 @@
 ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 </code>
+
+
 
